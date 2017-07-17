@@ -20,4 +20,4 @@ List of files:
 
 Instruction for running the code:
 ---
-You can run the python notebook directly after you installed all the used python package. (Matlibplot, pillow, moviepi, opencv, and the other fuctional packages)
+You can run the python notebook directly after you installed all the used python package. (Matlibplot, pillow, moviepi, opencv, and the other functioning packages)
