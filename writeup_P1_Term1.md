@@ -54,14 +54,17 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 One potential shortcoming would be this pipeline cannot find the lane accurately when the real lane has a curvature. 
 
-Another shortcoming could be the mask may is improper if the vehicle does not stay on the centerline of the lane. 
+Another shortcoming could be the mask can be improper if the vehicle does not stay on the centerline of the lane or the vehicle climbs a hill. 
 
 One more possible shortcoming of the current pipeline would be it won't work when the vehicle changes lane.
 
+Last, the current pipeline does a poor job when it is applied to a noisy video like the challenge one.
 
 ### 3. Suggest possible improvements to your pipeline
 
 Use advanced lane detection and find the curvature of the lane instead of predicting straight line only
 
 Apply a dynamic mask based on the sensor information and vehicle dynamics.
+
+Use another noisy filter wokring better than Gaussian filter in the driving scenario.
 
