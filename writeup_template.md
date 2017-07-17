@@ -1,8 +1,7 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
+## Author: Owen Hua
+## Date: 07/17/2017
 
 ---
 
@@ -15,10 +14,25 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./test_images_output/solidWhiteCurveLD.jpg "Rawlines Picture"
 
 ---
+### Lane Finding Pipeline (list criteria and meets the specification)
 
+* Does the pipeline for line identification take road images from a video as input and return an annotated video stream as output?
+ 
+  _Yes. Here is the link for you to download the output video: https://github.com/OwenHua666/SDCar_P1_Term1/blob/master/test_videos_output/solidWhiteRight.mp4_
+* Has a pipeline been implemented that uses the helper functions and / or other code to roughly identify the left and right lane lines   with either line segments or solid lines? 
+
+  _Yes, and I show one of my result below_
+
+![alt text][image1]
+
+
+* Have detected line segments been filtered / averaged / extrapolated to map out the full extent of the left and right lane boundaries?
+
+  _Yes. Here isthe link for you to download the output video: https://github.com/OwenHua666/SDCar_P1_Term1/blob/master/test_videos_output/solidYellowLeft.mp4_
+  
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
@@ -29,7 +43,7 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][image1]
+
 
 
 ### 2. Identify potential shortcomings with your current pipeline
