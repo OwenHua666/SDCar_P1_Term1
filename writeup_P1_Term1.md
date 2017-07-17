@@ -36,6 +36,8 @@ The goals / steps of this project are the following:
 
   _Yes. Here isthe link for you to download the output video: https://github.com/OwenHua666/SDCar_P1_Term1/blob/master/test_videos_output/solidYellowLeft.mp4_
   
+---
+
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
