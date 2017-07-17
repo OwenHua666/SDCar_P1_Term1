@@ -1,7 +1,8 @@
 # **Finding Lane Lines on the Road** 
 
-## Author: Owen Hua
-## Date: 07/17/2017
+_Author: Owen Hua_
+
+_Date: 07/17/2017_
 
 ---
 
@@ -37,14 +38,11 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of 5 steps. First, I converted the images to grayscale. Second, I apply Gaussian smoothing to the grayscale image. Third, I retrive edges from the grayscale image using Canny Edge Detection algorithm. Fourth, I create a mask to only keep the edges in the region of interest. Finally, I use Hough Transformaton to find the line in the image. 
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function. Based on the slopes of line segments found from Hough Transformation Line Detection, I mark the line segments as "left Lane" (slope < 0) and "Right Lane" (slope > 0). Then, I average each of the two lane groups to find mean points and slopes. Finally, I draw the two averaged lanes from the bottom of the image to the far end of interest. This is down by using (y2 - y1) = k * (x2 - x1).
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-
-
+Note: _The Pipeline described above is simple. So, I don't attach an image for it._
 
 ### 2. Identify potential shortcomings with your current pipeline
 
