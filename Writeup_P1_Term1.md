@@ -68,3 +68,11 @@ Apply a dynamic mask based on the sensor information and vehicle dynamics.
 
 Use another noisy filter wokring better than Gaussian filter in the driving scenario.
 
+---
+
+### Optional Challenge
+
+The optional challenge video is noisy. I turned the parameter and disregard some invalid horizontal lines because their slopes and position are explicitly unqualified as lane lines. The output video from this revised pipeline is not as good as the previous ones. The possible improvement could be down by applying the other kinds of filter to wipe out the noise in the video.
+
+
+
